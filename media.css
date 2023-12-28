@@ -64,10 +64,11 @@
     margin-bottom: 2rem;
   }
   .about-containers,
-  .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
+    
   }
+ 
   .contact-info-container {
     margin: 0;
   }
@@ -99,5 +100,9 @@
   }
   .text-container {
     text-align: center;
+  }
+  .contact-info-upper-container{
+    flex-wrap: wrap;
+    width: -webkit-fill-available;
   }
 }

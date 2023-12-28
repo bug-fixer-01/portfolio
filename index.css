@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
-  padding: 0;
   margin: 0;
 }
 
@@ -325,7 +324,6 @@ article .icon {
   margin: 2rem auto;
   padding: 1rem;
   gap: 0.1rem;
-  width: -webkit-fill-available;
 }
 
 .contact-info-container{
