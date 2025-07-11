@@ -4,7 +4,7 @@
   margin: 0;
 }
 
-body {
+body{
   font-family: "Poppins", sans-serif;
 }
 
@@ -20,10 +20,10 @@ a,
 .btn {
   transition: all 300ms ease;
 }
-/*desktop nav*/
+
 nav,
 .nav-links {
-  display: flex;
+  display: flex;;
 }
 
 nav {
@@ -39,17 +39,15 @@ nav {
 
 a {
   color: rgb(0, 0, 0);
-  text-decoration: none;
+  text-decoration: none
 }
 a:hover {
   color: grey;
   text-decoration: underline;
   text-underline-offset: 0.5rem;
 }
-
-.logo {
+.dark{
   font-size: 1.5rem;
-  cursor: default;
 }
 
 /* hamburger menu*/
@@ -86,13 +84,14 @@ a:hover {
   overflow: hidden;
   transition: all 0.5 ease-in-out;
   backdrop-filter: blur(4px);
+  border-radius: 10px;
 }
 .menu-links a {
   display: block;
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
@@ -173,6 +172,7 @@ section {
 .btn-container {
   display: flex;
   justify-content: center;
+  margin-bottom: 1rem;
   gap: 1rem;
 }
 .btn {
@@ -236,7 +236,7 @@ section {
 
 
 .details-container {
-  padding: 1.5rem;
+  padding: 1rem;
   flex: 1;
   background: white;
   border-radius: 2rem;
@@ -296,9 +296,9 @@ article .icon {
 }
 
 .project-img{
-  border-radius: 2rem;
-  width:90%;
-  height: 90%;
+  border-radius:1.5rem;
+  width:100%;
+  height: 100%;
 }
 .project-title{
   margin: 1rem;
@@ -351,4 +351,46 @@ footer {
 
 footer p{
   text-align: center;
+}
+
+label{
+  background: #ebebeb;
+  width: 77px;
+  height: 33px;
+  display: flex;
+  position: relative;
+  border-radius: 100px;
+  box-shadow:inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: 0.3s;
+}   
+
+label:after{
+  content: "";
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 3.5px;
+  left: 4px;
+  background: linear-gradient(180deg,#ffcc89,#d8860b);
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+input{
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+input:checked + label {
+  background: #242424;
+}
+input:checked + label:after{
+  left: 73px;
+  transform: translatex(-100%);
+  background: linear-gradient(180deg,#777,#3a3a3a);
+}
+.paragraph{
+  font-size: small;
+  margin-bottom: 2rem;
 }

@@ -7,3 +7,10 @@ function toggleMenu() {
     icon.classList.toggle("open");
 
 }
+
+const checkbox = document.getElementById('darkmode-toggle');
+const logo = document.querySelector('.logo');
+
+checkbox.addEventListener('click',() => {
+    logo.classList.toggle('dark');
+})
